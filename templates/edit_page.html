@@ -1,0 +1,12 @@
+
+
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}Edit{% endblock %}
+
+
+{% block content %}
+<p>Book Name: <strong>{{book.title}}</strong></p>
+{{render_form(form)}}
+{% endblock %}
